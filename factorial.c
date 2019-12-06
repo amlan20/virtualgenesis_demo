@@ -1,16 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 #include<stdio.h>
 int main()
 {
 int i , n;
-unsigned long long factorial = 1;
+unsigned long long fact = 1;
 scanf("%d",&n);
 if (n == 1)
 {
 return 1;
-}
-elseif(n<0)
-{
-printf("please enter positive integer");
 }
 else
 {
