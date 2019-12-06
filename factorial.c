@@ -1,20 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+
+unsigned int factorial(unsigned int n)
+{
+    int res = 1, i;
+    for (i = 2; i <= n; i++)
+        res *= i;
+    return res;
+}
+
 int main()
 {
-int n,fact = 1;
-scanf("%d",&n);
-if (n == 1)
-{
-return 1;
-}
-else
-{
-for(int i=1;i<=n;i++)
-{
-fact *= i;
-}
-printf( "factorial of %d is %d",n,fact);
-}
-return 0;
+    int num;
+    scanf("%d",&num);
+    printf("Factorial of %d is %u", num, factorial(num));
+    return 0;
 }
